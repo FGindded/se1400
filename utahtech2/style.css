@@ -17,6 +17,8 @@ header h1{
 nav{
     font-weight: bold;
     background-color: #F3F3F3;
+    padding: 0.5em;
+    padding-left: 2em;
 }
 h2{
     color:#424242;
@@ -48,6 +50,10 @@ footer{
 h1 {
     background-image: url(utahtechimages/utahtechlogo.svg);
     background-position: right;
+    background-repeat: no-repeat;
+    padding-left: 1em;
+    background-origin: content-box;
+    margin-bottom: 0;
     
 }
 #homehero{
