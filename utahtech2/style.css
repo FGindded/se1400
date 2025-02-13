@@ -3,6 +3,7 @@ body {
     color: #666666;
     background-image:linear-gradient(to bottom,#eeeeee,#ffffff);
     font-family:Verdana;
+    margin: 0px;
 }
 
 header {
@@ -47,13 +48,9 @@ footer{
     padding: 1rem;
 }
 #wrapper{
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #FFFFFF;
-    min-width: 960px;
-    max-width: 2048px;
-    box-shadow: 0px 3px 3px rgba(66,66,66,0.3);
+    display: grid;
+    grid-auto-rows: minmax(0px auto);
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
 }
 h1 {
     background-image: url(utahtechimages/utahtechlogo.svg);
@@ -88,3 +85,4 @@ h3{
     background-size: cover;
     background-position: center;
 }
+* { box-sizing: border-box; }
