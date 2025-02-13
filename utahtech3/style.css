@@ -10,6 +10,7 @@ header {
     background-color: #003058;
     color:#FFFFFF;
     font-family:Georgia;
+
 }
 main{
     padding-left: 2rem;
@@ -18,6 +19,7 @@ main{
 header h1{
     padding: .5rem;
     line-height: 140%;
+    
 }
 nav{
     font-weight: bold;
