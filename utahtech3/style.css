@@ -4,6 +4,7 @@ body {
     background-image:linear-gradient(to bottom,#eeeeee,#ffffff);
     font-family:Verdana;
     margin: 0px;
+    background-attachment: fixed;
 }
 
 header {
@@ -12,6 +13,7 @@ header {
     font-family:Georgia;
     grid-row: 1/2;
     grid-column: 2/8;
+
 
 }
 main{
