@@ -1,0 +1,41 @@
+#wrapper{
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    background-color: rgba(255, 255, 0, 0.3);
+    grid-template-columns: 30px minmax(0, 1fr) 1fr 30px;
+}
+
+body{
+    background-color: rgba(0, 0, 255, 0.3);
+    grid-area: 1 / 1 / 4 / 6;
+    height: 80px;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    background-color: rgba(255, 0, 0, 0.3);
+    grid-area: 1 / 1 / 1 / 6;
+    height: 100px;
+
+}
+
+header{
+    background-color: rgba(0, 255, 255, 0.3);
+    grid-area: 2 / 2 / 3 / 3;
+    height: 800px;
+}
+
+main{
+    background-color: rgba(0, 255, 0, 0.3);
+    grid-area: 2 / 3 / 3 / 4;
+    height: 800px;
+}
+
+footer{
+    background-color: rgba(255, 255, 0, 0.3);
+    grid-area: 4 / 1 / 4 / 6;
+    height: 100px;
+}
+
