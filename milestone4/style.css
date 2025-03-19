@@ -71,7 +71,7 @@ nav a{
 }
 * { box-sizing: border-box; }
 .picture {
-    height: 200px;
-    grid-area: 3 / 3 / 5 / 4
-
+    height: 20px;
+    grid-area: 4 / 3 / 5 / 4;
+    float: left;
 }
