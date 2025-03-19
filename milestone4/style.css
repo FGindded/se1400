@@ -8,7 +8,7 @@
 
 body{
     background-color: rgba(0, 0, 255, 0.3);
-    grid-area: 1 / 1 / 5 / 6;
+    grid-area: 1 / 1 / 6 / 6;
     height: 80px;
     margin: 0px;
     padding: 0px;
@@ -16,18 +16,17 @@ body{
 
 header{
     background-color: rgba(255, 0, 0, 0.3);
-    grid-area: 1 / 1 / 1 / 6;
+    grid-area: 1 / 1 / 1 / 5;
     height: 100px;
 
 }
 
 nav{
-    grid-area: 2 / 1 / 3 / 6;
     height: 100px;
     font-weight: bold;
     background-color: #424242;
     grid-row: 2/3;
-    grid-column: 2/8;
+    grid-column: 2/4;
     position:sticky;
     top: 0;
 
@@ -36,30 +35,31 @@ nav{
 
 #left{
     background-color: rgba(0, 255, 255, 0.3);
-    grid-area: 3 / 2 / 4 / 3;
+    grid-area: 3 / 2 / 5 / 3;
     height: 800px;
 }
 
 #right{
     background-color: rgba(0, 255, 0, 0.3);
-    grid-area: 3 / 3 / 4 / 4;
+    grid-area: 3 / 3 / 5 / 4;
     height: 800px;
 }
 
 footer{
     background-color: rgba(255, 255, 0, 0.3);
-    grid-area: 4 / 1 / 4 / 6;
+    grid-area: 5 / 1 / 5 / 5;
     height: 100px;
 }
 nav ul li{
     width: 100%;
+
 }
 nav ul{
     margin: 0px;
     padding: 0px;
     display: flex;
     flex-flow: row nowrap;
-    list-style-type: none;
+    list-style-type: none;    
 }
 
 nav a{
@@ -70,3 +70,8 @@ nav a{
     text-align: center;
 }
 * { box-sizing: border-box; }
+.picture {
+    height: 200px;
+    grid-area: 3 / 3 / 5 / 4
+
+}
