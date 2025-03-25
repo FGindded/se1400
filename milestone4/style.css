@@ -3,7 +3,7 @@
     padding: 0px;
     display: grid;
     background-color: rgb(0, 0, 0);
-    grid-template-columns: 80px 1fr 1fr 30px;
+    grid-template-columns: 0.1fr minmax(0, 1fr) minmax(0, 1fr) 0.1fr;
 }
 
 body{
@@ -32,18 +32,19 @@ nav{
     top: 0;
 
 }
-
+#left, #right {
+    padding: 5%;
+    height: 800px;
+}
 
 #left{
     background-color: rgb(255, 255, 255);
     grid-area: 3 / 2 / 5 / 3;
-    height: 800px;
 }
 
 #right{
     background-color: rgb(255, 255, 255);
     grid-area: 3 / 3 / 5 / 4;
-    height: 800px;
 }
 
 footer{
@@ -71,6 +72,7 @@ nav a{
     text-align: center;
 }
 * { box-sizing: border-box; }
+
 .picture {
     height: 250px;
     grid-area: 4 / 3 / 5 / 4;
@@ -83,6 +85,10 @@ nav a{
 #test {
     display: grid;
     grid-column: 2/3;
-    margin:1fr;
+    margin-left:30px;
 
+}
+
+footer a{
+    margin-left: 30px;
 }
