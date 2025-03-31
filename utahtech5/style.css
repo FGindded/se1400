@@ -158,4 +158,67 @@ form {
     grid-template-rows: auto;
     grid-template-columns: 200px 1fr;
     gap: 0.75rem;
+    width: 100%;
+}
+
+input, textarea {
+    font-size: 1em;
+    padding: 10px;
+    color: #666666;
+    background-color: #fafafa;
+    border: none;
+}
+
+input:focus, textarea:focus {
+outline: none;
+background-color: #f0f0f0;
+}
+
+label {
+    padding: 10px;
+    text-align: right;
+}
+
+#mysubmit {
+    width: 10rem;
+    grid-column: 2/3;
+}
+
+@media only screen and (max-width: 1100px)
+{
+    #wrapper{
+        grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 150px)) minmax(0px, 1fr);
+    }
+}
+@media only screen and (max-width: 900px)
+{
+
+    nav {
+        grid-row: 2/3;
+        grid-column: 1/5;
+        position: static;
+    }
+    nav ul {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    #homehero, #studenthero, #facultyhero, #alumnihero {
+        grid-row: 2 /3 ;
+        grid-column: 5 / 8;
+    }
+
+}
+@media only screen and (max-width: 600px)
+{
+    header h1 {
+        background-image: none;
+        text-align: center;
+    }
+    nav {
+        grid-row: 2/3;
+        grid-column: 1/-1;
+    }
+    #homehero, #studenthero, #facultyhero #alumnihero {
+        display: none;
+    }
 }

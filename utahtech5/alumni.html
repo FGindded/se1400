@@ -29,16 +29,17 @@
     <main>
     <h2>Join Alumni Mailing List</h2>
     <h3>Request Alumni Newsletter</h3>
+    <p>Required information is marked with an asterisk (*)</p>
     <form>
       <label for="myFName">* First Name:</label>
       <input type="text" id="myFName" name="myFName" required>
       <label for="myLName">* Last Name:</label>
       <input type="text" id="myLName" name="myLName" required>
       <label for="myEmail">* Email:</label>
-      <input type="text" id="myEmail" name="myEmail" required>
+      <input type="email" id="myEmail" name="myEmail" required>
       <label for="myPhone">Phone:</label>
       <input type="tel" id="myPhone" name="myPhone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="123-456-7890">
-      <label type="myGradYear">Graduation Year:</label>
+      <label for="myGradYear">Graduation Date:</label>
       <input type="date" id="myGradYear" name="myGradYear" required>
       <label for="myComements">* Comments:</label>
       <textarea id="myComements" name="myComements" rows="2" cols="20" required></textarea>
