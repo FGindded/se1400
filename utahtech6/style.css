@@ -225,7 +225,29 @@ label {
 
 table {
     margin: 0 auto;
-    border: #424242 1px;
-    width: 100%;
+    border-color: #424242;
+    border: solid;
+    border-width: 1px;
+    width: 100%;  
+    border-collapse: collapse;
+}
 
+td, th {
+    padding: 5px;
+    border-color: #424242;
+    border-width: 1px;
+    border: solid;
+  
+}
+
+td {
+    text-align: center;
+}
+
+.text {
+    text-align: left;
+}
+
+tr:nth-of-type(even) {
+    background-color: #f3f3f3;
 }
