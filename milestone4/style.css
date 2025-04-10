@@ -34,7 +34,7 @@ nav{
 }
 #left, #right {
     padding: 5%;
-    height: 800px;
+
 }
 
 #left{
@@ -76,10 +76,9 @@ nav a{
 .picture {
     height: 250px;
     grid-area: 4 / 3 / 5 / 4;
-    float:left;
-    margin:auto;
+    padding: 20px;
     position: relative;
-    top: -80px;
+    
 }
 
 #test {
