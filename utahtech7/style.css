@@ -43,6 +43,7 @@ nav a{
     padding: 1rem 0rem;
     display: block;
     text-align: center;
+    transition: background-color ease-out 0.5s;
 }
 h2{
     color:#424242;
@@ -206,6 +207,12 @@ label {
         grid-row: 2 /3 ;
         grid-column: 5 / 8;
     }
+    video{
+        float: none;
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
 
 }
 @media only screen and (max-width: 600px)
@@ -254,4 +261,9 @@ tr:nth-of-type(even) {
 
 .uni {
     text-align: left;
+}
+
+video {
+    float: right;
+    margin-left: 2em;
 }
