@@ -277,10 +277,10 @@ video {
     margin-left: 2em;
 }
 #shoppingcart img {
-    width:100%l;
+    width:100%;
     height: auto;
 }
 #shoppingcart {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 }
