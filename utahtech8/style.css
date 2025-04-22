@@ -276,3 +276,11 @@ video {
     float: right;
     margin-left: 2em;
 }
+#shoppingcart img {
+    width:100%l;
+    height: auto;
+}
+#shoppingcart {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
