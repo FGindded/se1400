@@ -7,6 +7,15 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script> 
+    function validateForm() {
+         if (document.forms[0].myEmail.value == "" ) {
+              alert("Please enter an e-mail address.");
+              return false;
+         } // end if
+         return true;
+    } // end function validateForm
+    </script>
 </head>
 <body>
   <div id="wrapper">  
@@ -31,18 +40,18 @@
     <h2>Join Alumni Mailing List</h2>
     <h3>Request Alumni Newsletter</h3>
     <p>Required information is marked with an asterisk (*)</p>
-    <form>
-      <label for="myFName">* First Name:</label>
+    <form method="post" onsubmit="return validateForm();" action="https://kearl.net/se1400/mail.php">
+      <label for="myFName">First Name:</label>
       <input type="text" id="myFName" name="myFName" required>
-      <label for="myLName">* Last Name:</label>
+      <label for="myLName">Last Name:</label>
       <input type="text" id="myLName" name="myLName" required>
       <label for="myEmail">* Email:</label>
-      <input type="email" id="myEmail" name="myEmail" required>
+      <input type="text" name="myEmail" id="myEmail">
       <label for="myPhone">Phone:</label>
       <input type="tel" id="myPhone" name="myPhone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="123-456-7890">
       <label for="myGradYear">Graduation Date:</label>
       <input type="date" id="myGradYear" name="myGradYear" required>
-      <label for="myComements">* Comments:</label>
+      <label for="myComements">Comments:</label>
       <textarea id="myComements" name="myComements" rows="2" cols="20" required></textarea>
       <input type="submit" id="mySubmit">
     </form>
