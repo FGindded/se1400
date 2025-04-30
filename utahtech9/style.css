@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #003058;
+    background-color: #e0dfa9;
     color:#FFFFFF;
     font-family:Georgia;
     grid-row: 1/2;
@@ -30,7 +30,7 @@ header h1{
 }
 nav{
     font-weight: bold;
-    background-color: #424242;
+    background-color: #ff0101;
     grid-row: 2/3;
     grid-column: 2/8;
     position:sticky;

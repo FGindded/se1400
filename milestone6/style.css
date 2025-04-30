@@ -15,7 +15,7 @@ body{
 }
 
 header{
-    background-color: rgb(92, 86, 86);
+    background-color: rgb(83, 73, 73);
     grid-area: 1 / 1 / 1 / 5;
     height: 100px;
     position: sticky;
@@ -23,9 +23,8 @@ header{
 }
 
 nav{
-    height: 100px;
     font-weight: bold;
-    background-color: #424242;
+    background-color: #727171;
     grid-row: 2/3;
     grid-column: 2/4;
     position:sticky;
@@ -67,9 +66,10 @@ nav ul{
 nav a{
     text-decoration: none;
     color: #ffffff;
-    padding: 1rem 0rem;
+    padding: 1rem;
     display: block;
     text-align: center;
+    height: 100%;
 }
 * { box-sizing: border-box; }
 
@@ -103,7 +103,7 @@ footer a{
 
 @media only screen and (max-width: 768px) {
     .picture {
-        display: flex;
+
         height:auto;
         width: 100%;
     }
@@ -121,4 +121,8 @@ footer a {
 
 header h1{
     color: #ffffff;
+}
+
+nav a.current {
+    background-color: rgba(53, 47, 47, 0.322);
 }
