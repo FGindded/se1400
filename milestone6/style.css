@@ -74,7 +74,8 @@ nav a{
 * { box-sizing: border-box; }
 
 .picture {
-    height: 250px;
+    height:auto;
+    width: 80%;
     grid-area: 4 / 3 / 5 / 4;
     padding: 20px; 
     
