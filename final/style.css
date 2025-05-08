@@ -1,0 +1,102 @@
+/* Structual Elements Go Here */
+body {
+    background-color: #edeeef;
+    color: #555;
+    margin: 0;
+    font-family: Lato;
+}
+
+#wrapper {
+    display:grid;
+    grid-template-columns: minmax(0, 1fr)  repeat(6, minmax(0, 175px))  minmax(0, 1fr);
+}
+
+nav {
+    grid-column: 2/3;
+    background-color: #edeeef;
+}
+
+main{
+    grid-column: 3/-2;
+    background-color: #fff;
+    padding: 20px;
+
+}
+
+footer{
+    grid-column: 3/-2;
+    background-color: #2d5ba6;
+    color: #fff;
+    font-size: 0.5rem;
+    padding: 20px;
+}
+/* Navigation Elements Go Here */
+
+
+nav ul{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+}
+
+nav ul li{
+    width: 100%;
+}
+nav ul li a{
+    width: 100%;
+    color: #555;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+nav:active {
+    background-color: #fff;
+    color: #d53631;
+}
+
+
+/* Styling Elements Go Here */
+p {
+    line-height: 1.25rem;
+}
+
+a{
+    color: #f53631;
+}
+
+.responsive {
+    width:100%;
+    height: auto;
+}
+
+
+/* Media Query of 960 and less goes here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
