@@ -37,20 +37,22 @@ nav ul{
     padding: 0px;
     margin: 0px;
     display: flex;
+    flex-direction: column;
+    text-decoration: none;
 }
 
 nav ul li{
     width: 100%;
 }
 nav ul li a{
+    display: block;
     width: 100%;
     color: #555;
     padding: 10px;
-    display: block;
-    text-decoration: none;
+    text-decoration: none;  
 }
 
-nav:active {
+nav ul li a:active {
     background-color: #fff;
     color: #d53631;
 }
@@ -66,13 +68,40 @@ a{
 }
 
 .responsive {
-    width:100%;
+    width: 100%;
     height: auto;
 }
 
+.small {
+    width: 300px;
+    height: auto;
+    padding: 10px 0px 0px 10px;
+    float: right;
+    font-style: italic;
+    font-size: 0.75rem;
+}
+
+h2 {
+    border-bottom: #555;
+    border-width: 2px;
+
+}
 
 /* Media Query of 960 and less goes here */
+@media only screen and (max-width: 960px) {
+    nav, main, footer {
+        grid-column: 2/-2;
+    }
+    .small {
+      width: 100%;
+      padding: 0px;
+      float: none;
+    }
+    nav ul {
+        flex-direction: row;
 
+    }
+  }
 
 
 
