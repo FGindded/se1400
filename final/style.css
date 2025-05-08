@@ -38,7 +38,7 @@ nav ul{
     margin: 0px;
     display: flex;
     flex-direction: column;
-    text-decoration: none;
+    list-style-type: none;
 }
 
 nav ul li{
@@ -81,7 +81,7 @@ a{
     font-size: 0.75rem;
 }
 
-h2 {
+hr {
     border-bottom: #555;
     border-width: 2px;
 
@@ -96,10 +96,11 @@ h2 {
       width: 100%;
       padding: 0px;
       float: none;
+
     }
     nav ul {
         flex-direction: row;
-
+        padding-bottom: 0px;
     }
   }
 
