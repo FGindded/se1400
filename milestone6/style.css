@@ -9,7 +9,6 @@
 body{
     background-color: rgb(177, 177, 177);
     grid-area: 1 / 1 / 6 / 6;
-    height: 80px;
     margin: 0px;
     padding: 0px;
 }
@@ -127,6 +126,6 @@ nav a.current {
     background-color: rgba(53, 47, 47, 0.322);
 }
 
-p {
+h1 {
     text-align: center;
 }
